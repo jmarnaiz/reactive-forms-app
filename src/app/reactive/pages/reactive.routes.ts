@@ -14,7 +14,7 @@ export const reactiveRoutes: Routes = [
       },
       {
         path: 'dynamic',
-        title: 'Basics',
+        title: 'Dynamic',
         component: DynamicPageComponent,
       },
       {
