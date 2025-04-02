@@ -15,11 +15,7 @@
             formControlName="name"
           />
 
-          @if (formUtils.isValidField(myForm, 'name')) {
-          <span class="form-text text-danger">
-            {{ formUtils.getFieldError(myForm, "name") }}
-          </span>
-          }
+          <custom-field [form]="myForm" fieldName="name" />
         </div>
       </div>
 
@@ -33,11 +29,7 @@
             placeholder="Precio del producto"
             formControlName="price"
           />
-          @if (formUtils.isValidField(myForm, 'price')) {
-          <span class="form-text text-danger">
-            {{ formUtils.getFieldError(myForm, "price") }}
-          </span>
-          }
+          <custom-field [form]="myForm" fieldName="price" />
         </div>
       </div>
 
@@ -52,11 +44,7 @@
             formControlName="inStorage"
           />
 
-          @if (formUtils.isValidField(myForm, 'inStorage')) {
-          <span class="form-text text-danger">
-            {{ formUtils.getFieldError(myForm, "inStorage") }}
-          </span>
-          }
+          <custom-field [form]="myForm" fieldName="inStorage" />
         </div>
       </div>
 

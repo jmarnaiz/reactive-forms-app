@@ -7,10 +7,11 @@ import {
   Validators,
 } from '@angular/forms';
 import { FormUtils } from '../../../utils/form-utils';
+import { CustomFieldComponent } from '../../../shared/components/custom-field/custom-field.component';
 
 @Component({
   selector: 'app-basic-page',
-  imports: [JsonPipe, ReactiveFormsModule],
+  imports: [JsonPipe, ReactiveFormsModule, CustomFieldComponent],
   templateUrl: './basic-page.component.html',
 })
 export class BasicPageComponent {
